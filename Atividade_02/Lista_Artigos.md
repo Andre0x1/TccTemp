@@ -1,7 +1,5 @@
 # Lista de artigos : Tema geral Machine Learning - Qualidade (Testes/Desenvolvimento)
 
-Software quality
-
 - 1: Towards Automating Code Review Activities : https://doi.org/10.1109/ICSE43902.2021.00027
 - 2: Characterizing High-Quality Test Methods: A First Empirical Study : https://doi.org/10.1145/3524842.3529092
 - 3: Importance-Driven Deep Learning System Testing : https://ieeexplore.ieee.org/abstract/document/9283940
