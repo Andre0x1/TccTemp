@@ -20,7 +20,7 @@ Artigos selecionados:
 
 - 1: Towards Automating Code Review Activities : https://doi.org/10.1109/ICSE43902.2021.00027
 - 2: Characterizing High-Quality Test Methods: A First Empirical Study : https://doi.org/10.1145/3524842.3529092-
-- 3: Importance-Driven Deep Learning System Testing : https://ieeexplore.ieee.org/abstract/document/9283940
-- 5: Deep learning based software defect prediction : https://www.sciencedirect.com/science/article/pii/S0925231219316698
-- 8: Performance evaluation of Botnet DDoS attack detection using machine learning : https://link.springer.com/article/10.1007/s12065-019-00310-w
-- 14: Poster: Performance Testing Driven by Reinforcement Learning https://ieeexplore.ieee.org/abstract/document/9159096
+- 3: Importance-Driven Deep Learning System Testing : https://doi.org/10.1145/3377811.3380391
+- 5: Deep learning based software defect prediction : https://doi.org/10.1016/j.neucom.2019.11.067
+- 8: Performance evaluation of Botnet DDoS attack detection using machine learning : https://doi.org/10.1007/s12065-019-00310-w
+- 14: Poster: Performance Testing Driven by Reinforcement Learning https://doi.org/10.1109/ICST46399.2020.00048
