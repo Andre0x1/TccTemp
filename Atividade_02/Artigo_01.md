@@ -1,6 +1,7 @@
 # Importance-Driven Deep Learning System Testing
 
-S. Gerasimou, H. F. Eniser, A. Sen and A. Cakan, "Importance-Driven Deep Learning System Testing," 2020 IEEE/ACM 42nd International Conference on Software Engineering (ICSE), 2020, pp. 702-713. doi: [10.1145/3377811.3380391](https://doi.org/10.1145/3377811.3380391)
+S. Gerasimou, H. F. Eniser, A. Sen and A. Cakan, "Importance-Driven Deep Learning System Testing," 2020 IEEE/ACM 42nd International Conference on Software Engineering (ICSE), 2020, pp. 702-713. (https://doi.org/10.1145/3377811.3380391)
+doi: [10.1145/3377811.3380391]
 
 ## 1. Fichamento de Conteúdo
 
