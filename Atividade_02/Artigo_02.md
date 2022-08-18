@@ -8,11 +8,11 @@ Com o aumento da complexidade dos sistemas também aconteceu o aumento da frequ�
 
 ## 2. Fichamento Bibliográfico
 
-- _Deep Learning_ (Aprendizagem profunda) é um ramo do estudo de machine learning que é baseado em um conjunto de algoritmos que tentam modelar abstrações de alto nível de dados, usando um grafo com várias camadas de processamento, compostas de várias transformações.
+- _Deep Learning_ (Aprendizagem profunda) é um ramo do estudo de machine learning que é baseado em um conjunto de algoritmos que tentam modelar abstrações de alto nível de dados, usando um grafo com várias camadas de processamento, compostas de várias transformações (Pagina 2).
 
-- Treinamento (Aprendizado) etapa de instruções passada ao sistema para que possa ser analisadas e reproduzidas .
+- Treinamento (Aprendizado) etapa de instruções passada ao sistema para que possa ser analisadas e reproduzidas (Pagina 4).
 
-- Defeitos é qualquer imperfeição ou inconsistência no produto do software ou em seu processo, um defeito é também uma não conformidade.
+- Defeitos é qualquer imperfeição ou inconsistência no produto do software ou em seu processo, um defeito é também uma não conformidade (Pagina 1).
 
 ## 3. Fichamento de Citações
 

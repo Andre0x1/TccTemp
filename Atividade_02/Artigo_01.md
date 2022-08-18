@@ -8,13 +8,13 @@ Os autores do artigo explicam como sistemas baseados em algoritmos _Deep Learnin
 
 ## 2. Fichamento Bibliográfico
 
-- _Deep Learning_ (Aprendizagem profunda) é um ramo do estudo de machine learning que é baseado em um conjunto de algoritmos que tentam modelar abstrações de alto nível de dados, usando um grafo com várias camadas de processamento, compostas de várias transformações.
+- _Deep Learning_ (Aprendizagem profunda) é um ramo do estudo de machine learning que é baseado em um conjunto de algoritmos que tentam modelar abstrações de alto nível de dados, usando um grafo com várias camadas de processamento, compostas de várias transformações (Pagina 2).
 
-- _Importance-Driven_ (metodologia baseado em importância) metodologia apresentada pelo artigo que determina que o valor de determinado elemento no conjunto é baseado na sua importância no mesmo.
+- _Importance-Driven_ (metodologia baseado em importância) metodologia apresentada pelo artigo que determina que o valor de determinado elemento no conjunto é baseado na sua importância no mesmo (Pagina 2).
 
-- Neurônios é um componente que calcula a soma ponderada de vários inputs, aplica uma função e passa o resultado adiante, formando a uma sequencia.
+- Neurônios é um componente que calcula a soma ponderada de vários inputs, aplica uma função e passa o resultado adiante, formando a uma sequencia (Pagina 4).
 
-- _weights_ (peso) é um valor dado a cada neurônio que determina sua influência na rede.
+- _weights_ (peso) é um valor dado a cada neurônio que determina sua influência na rede (Pagina 5).
 
 ## 3. Fichamento de Citações
 

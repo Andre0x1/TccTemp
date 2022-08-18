@@ -8,11 +8,11 @@ Devido a popularização da tecnologia e a constante troca de informação pesso
 
 ## 2. Fichamento Bibliográfico
 
-- _Distributed Denial of Service_ (Ataque de negação de serviço)Um ataque de negação de serviço, é uma tentativa de tornar os recursos de um sistema indisponíveis para os seus utilizadores.
+- _Distributed Denial of Service_ (Ataque de negação de serviço)Um ataque de negação de serviço, é uma tentativa de tornar os recursos de um sistema indisponíveis para os seus utilizadores(Pagina 2).
 
-- _Botnets_ Um dispositivo conectado a uma rede, cada um executando um ou mais bots.
+- _Botnets_ Um dispositivo conectado a uma rede, cada um executando um ou mais bots (Pagina 2).
 
-- treinamento não supervisionado é um metodo pelo qual acontece o aprendizado do algotimo "aprende" os dados, ele possui dados não rotulados que o algoritmo deve tentar entender por conta própria.
+- treinamento não supervisionado é um metodo pelo qual acontece o aprendizado do algotimo "aprende" os dados, ele possui dados não rotulados que o algoritmo deve tentar entender por conta própria (Pagina 5).
 
 ## 3. Fichamento de Citações
 
