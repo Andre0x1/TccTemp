@@ -1,0 +1,80 @@
+1= introdução;
+2= problema;
+3 = solução;
+4 = trabalho;
+5 = resultados;
+
+
+4º artigo 
+
+1 = Performance is a software quality characteristic which describes
+time and resource bound aspects of software behavior
+[1]. Performance testing is a family of techniques intended
+to accomplish the objectives of performance evaluation. The
+objectives are generally considered as measuring performance
+metrics (e.g. response time, throughput, and resource utilization)
+and finding performance issues such as specific functional
+problems emerging under certain execution conditions,
+e.g. heavy load, and violations of performance requirements.
+Performance testing techniques mainly involve executing software
+under test (SUT) under different normal and stress execution
+conditions. Finding performance issues such as performance
+breaking point, i.e., an execution condition under which
+the SUT becomes unresponsive or performance requirements
+are not satisfied anymore, is often challenging.
+
+
+2= Performance modelling and testing techniques are the common
+approaches to accomplish the objectives of performance
+evaluation. Model-driven approaches generally involve building
+a model of the performance behavior of the SUT using the
+associated modeling notations such as queuing theory, petri
+nets and Markov processes. It is mainly intended to measure
+the performance metrics and analyze the behavior of the SUT
+under different conditions. On the other hand, performance
+testing techniques execute the SUT under different test conditions
+and mainly rely on source code and system models
+to generate test cases. Common approaches for generating
+performance test cases could be categorized as follows: 
+Machine learning-enabled methods,Behavior-driven declarative methods,
+Real usage modelling, Analysis of system model or source code
+
+Although modeling provides a deep insight of the system
+behavior, drawing a well-detailed model is challenging and
+still there are some kinds of details that might be ignored
+during the modelling. On the other hand, the artifacts such as
+system models and source code which are used to generate
+the test cases might not be available during the testing. 
+
+3= How we address the challenge. The proposed solution
+is an autonomous performance testing framework involving
+two parts: a self-adaptive fuzzy RL-based (SaFReL) stress
+testing and an RL-driven load testing. Both parts of the
+framework generally assume two phases of learning: initial
+and transfer learning. The smart tester agent learns the optimal
+policy to achieve the intended objective through the initial
+learning. It reuses the learnt policy in further performance testing
+scenarios while keeping the learning running in the longterm.we use a well-known model-free RL algorithm
+[18], Q-learning, as the core learning algorithm in our
+framework. An RL-based smart agent basically learns through
+interaction with the environment, the SUT and execution
+platform in our case.
+
+reinforcement learning (RL)
+
+4= We evaluate the performance of the autonomous framework
+in terms of effectiveness, efficiency and adaptivity to accomplish
+the intended objectives, and also examine the behavioral
+sensitivity of the framework to the learning parameters. We
+conduct the experimental evaluation of the smart stress testing,
+SaFReL, on different instances of 12 well-known programs
+such as Build-apache, n-queens, dcraw, etc. which are characterized
+with different initial amounts of granted resources
+and response time requirements.
+
+5= The proposed RL-driven performance testing framework is
+able to accomplish the intended objectives efficiently and
+adaptively in different testing situations without access to
+system model or source code.
+
+
