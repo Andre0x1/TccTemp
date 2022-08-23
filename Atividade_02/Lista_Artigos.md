@@ -15,6 +15,7 @@
 - 13: Deep Learning for Spacecraft Pose Estimation from Photorealistic Rendering: https://doi.org/10.1109/ICRA40945.2020.9197244
 - 14: Poster: Performance Testing Driven by Reinforcement Learning https://doi.org/10.1109/ICST46399.2020.00048
 - 15: Software Defect Prediction Using Ensemble Learning: A Systematic Literature Review : https://doi.org/10.1109/ACCESS.2021.3095559
+- -16: Fuzzy Q-learning: a new approach for fuzzy dynamic programming : https://doi.org/10.1109/FUZZY.1994.343737
 
 Artigos selecionados:
 
