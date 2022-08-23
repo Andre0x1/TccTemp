@@ -4,6 +4,8 @@ M. H. Moghadam, M. Saadatmand, M. Borg, M. Bohlin and B. Lisper, "Poster: Perfor
 
 ## 1. Fichamento de Conteúdo
 
+O artigo se inicia descrevendo como a performance é um fator importante para a qualidade de um _software_ e que com o tempo diversas técnicas de teste de performance foram desenvolvidas para determinar locais que possam diminui-la, tais testes englobam tempo de reposta, taxa de transferência, gasto de recursos e outras métricas. Testes de Performance normalmente executam o _software_ em teste (_software under test (SUT)_) com diversas intensidades de carga e por causa disso demanda uma grande quantidade de tempo e recursos para serem planejados e implementados, com essa informação os autores do artigo apresentam um novo _framework_ para auxiliar a determinar a melhor sequencia de testes e a carga de informações otimizada para obtenção das métricas necessárias. A ferramenta funciona seguindo dois dois modelos de _Machine Learning_ realizando os testes de _stress_ usando _SaFReL_(_self-adaptive fuzzy RL-based_) e testes de carga usando uma metodologia baseada em aprendizado reforçado. O _framework_ foi avaliado em relação a sua velocidade, eficiência e adaptabilidade para concluir os objetivos definidos no treinamento e foi possível identificar que ele foi capaz de trabalhar de forma eficiente mesmo com projetos complexos e com grande carga de dados.
+
 ## 2. Fichamento Bibliográfico
 
 - _Distributed Denial of Service_ (Ataque de negação de serviço)Um ataque de negação de serviço, é uma tentativa de tornar os recursos de um sistema indisponíveis para os seus utilizadores(Pagina 2).
