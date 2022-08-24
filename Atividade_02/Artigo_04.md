@@ -8,16 +8,15 @@ O artigo se inicia descrevendo como a performance é um fator importante para a 
 
 ## 2. Fichamento Bibliográfico
 
-- _Distributed Denial of Service_ (Ataque de negação de serviço)Um ataque de negação de serviço, é uma tentativa de tornar os recursos de um sistema indisponíveis para os seus utilizadores(Pagina 2).
-
-- _Botnets_ Um dispositivo conectado a uma rede, cada um executando um ou mais bots (Pagina 2).
-
-- treinamento não supervisionado é um metodo pelo qual acontece o aprendizado do algotimo "aprende" os dados, ele possui dados não rotulados que o algoritmo deve tentar entender por conta própria (Pagina 5).
+- _Software under test_: refere-se a um sistema que está sendo testado para operação correta(Pagina 2).
+- _SaFReL_ (_self-adaptive fuzzy RL-based_): Metodologia de aprendizado de Machine Learning baseada em Aprendizado por Reforço com o auxilio de lógica Difusa, que inicia as variáveis inicias com valores aleatórios.(Pagina 4)
+- Teste de Stress: baseia-se em testar os limites do software e avaliar seu comportamento (Pagina 4).
+- Teste de carga: é usado para verificar o limite de dados processados pelo software até que ele não consiga mais processa-lo (Pagina 4).
 
 ## 3. Fichamento de Citações
 
-- _"Distributed Denial of Service (DDoS) attacks are the important threats to the Internet because number of clients are sending the request to single server, so server are not able to provide the proper services to the clients due to excessive resource consumption."_
-- _"In order to validate the performance of algorithms, we use the benchmark UNBS-NB-15 dataset- one of the latest and widely used datasets. Therefore, it gives precise representation of both traditional network traffic and several network attacks made by Botnets"_
-- _"We came across several techniques of attack detection in Botnets during the literature survey. The techniques pose several limitations pertaining to scalability, large data sets, accuracy, complex data, slow results etc."_
-- _"Hence there is a need to consider a much more feasible technique that addresses all these challenges. Machine Learning is one such approach and it incorporates several techniques."_
-- _"It has been shown that USML (unsupervised learning) is the best at differentiating between Botnet and normal network traffic in term of Accuracy, False Alarm Rate (FAR), Sensitivity, Specificity, False positive rate (FPR), AUC and MCC. This validation is significant in computer security and other related fields."_
+- _"Performance is a software quality characteristic which describes time and resource bound aspects of software behavior. Performance testing is a family of techniques intended to accomplish the objectives of performance evaluation. The objectives are generally considered as measuring performance metrics (e.g. response time, throughput, and resource utilization) and finding performance issues such as specific functional problems emerging under certain execution conditions, e.g. heavy load, and violations of performance requirements."_
+- _"Performance modelling and testing techniques are the common approaches to accomplish the objectives of performance evaluation. Model-driven approaches generally involve building a model of the performance behavior of the SUT using the associated modeling notations such as queuing theory, petri nets and Markov processes."_
+- _"How we address the challenge. The proposed solution is an autonomous performance testing framework involving two parts: a self-adaptive fuzzy RL-based (SaFReL) stress testing and an RL-driven load testing. Both parts of the framework generally assume two phases of learning: initial and transfer learning. The smart tester agent learns the optimal policy to achieve the intended objective through the initial learning."_
+- _"We evaluate the performance of the autonomous framework in terms of effectiveness, efficiency and adaptivity to accomplish the intended objectives, and also examine the behavioral sensitivity of the framework to the learning parameters. We conduct the experimental evaluation of the smart stress testing, SaFReL, on different instances of 12 well-known programs such as Build-apache, n-queens, dcraw, etc. which are characterized with different initial amounts of granted resources and response time requirements."_
+- _"The proposed RL-driven performance testing framework is able to accomplish the intended objectives efficiently and adaptively in different testing situations without access to system model or source code."_
