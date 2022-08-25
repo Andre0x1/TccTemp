@@ -1,4 +1,4 @@
-# Performance evaluation of Botnet DDoS attack detection using machine learning
+# Poster: Performance Testing Driven by Reinforcement Learning
 
 M. H. Moghadam, M. Saadatmand, M. Borg, M. Bohlin and B. Lisper, "Poster: Performance Testing Driven by Reinforcement Learning," 2020 IEEE 13th International Conference on Software Testing, Validation and Verification (ICST), 2020, pp. 402-405, doi: 10.1109/ICST46399.2020.00048. doi: [https://doi.org/10.1109/ICST46399.2020.00048]
 
