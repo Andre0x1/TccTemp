@@ -7,86 +7,69 @@
 
 5º artigo 
 
-1 = Code Review is the process of analyzing source code written
-by a teammate to judge whether it is of sufficient quality
-to be integrated into the main code trunk. Recent studies
-provided evidence that reviewed code has lower chances of
-being buggy [1]–[3] and exhibit higher internal quality [3],
-likely being easier to comprehend and maintain. Given these
-benefits, code reviews are widely adopted both in industrial
-and open source projects with the goal of finding defects,
-improving code quality, and identifying alternative solutions.
-The benefits brought by code reviews do not come for
-free. Indeed, code reviews add additional expenses to the
-standard development costs due to the allocation of one or
-more reviewers having the responsibility of verifying the
-correctness, quality, and soundness of newly developed code.
+1= Software testing is a key practice in software development. As a
+proxy of test quality, one can rely on code coverage or mutation
+analysis. Coverage measures the percentage of code that is covered
+by tests and is typically used to assess the test effectiveness.
+
+Test mutation technique assesses test effectiveness in four major
+steps (illustrated in Figure 1-left). First, the project test suite is
+executed and the results are stored as the expected output. Then, a
+mutation testing engine (e.g., PIT [26]) parses the code and applies
+mutation operators on code structures generating a set of mutants.
+The mutants are separately tested by the test suite and the results
+form the obtained output. Lastly, each obtained output is compared
+to the expected output. A mutant is “killed” when at least one of
+the test results differs between both sets, i.e., when at least one of
+the test methods run on the mutants failed, meaning they properly
+detected the code mutations. Finally, a mutation score is computed:
+higher scores mean the test suite is better in catching real bugs [34].
 
 
-2 = Bosu and Carver report that developers spend, on average,
-more than six hours per week reviewing code [4].This is
-not surprising considering the high number of code changes
-reviewed in some projects: Rigby and Bird [5] show that industrial
-projects, such as Microsoft Bing, can undergo thousands
-of code reviews per month (3k in the case of Bing). Also, as
-highlighted by Czerwonka et al. [6], the effort spent in code
-review does not only represent a cost in terms of time, but
-also pushes developers to switch context from their tasks.
+2= However, it presents some limitations [5, 21, 34]. For example,
+one can have great coverage with no assert. Although test suite mutation testing is ideal for gathering the overall
+test quality in a system, it has three limitations: (1) the overall
+system mutation score overshadows the quality of individual test
+methods; (2) the quality of a contribution (e.g., a pull request with
+code and tests) can be unnoticed in a large system because its score
+may be unaffected by small code changes (due to existing tests
+outnumber the contributed tests); (3) existing test methods may
+kill mutants within a contribution and hinder assessing the quality
+of the contributed tests.
 
 
-3 = In this paper, we make a first step in this direction by using
-Deep Learning (DL) models to partially automate specific code
-review tasks.
+4=We collect the top 15 Java repositories from GitHub (in terms of
+the star metric [3, 28]) and the Apache Commons Lang. Next, for
+each project, we clone the latest master branch version, manually
+configure the extended PIT [26] via their build configuration file,
+and discard the projects accused by PIT of having failing tests. The
+five remaining projects are highly active and their size ranges from
+35.9KLOC (Retrofit) to 310.8KLOC (RxJava).
 
+After selecting the target projects, we start the mutation testing
+execution phase. Table 1 summarizes this analysis: in total, PIT
+detected 18,321 test cases in the five projects. Overall, it generated
+55,427 mutants, which resulted in 16,149,383 mutant executions.
+The mutation scores are overall high, ranging from 73% (Okhttp) to
+86% (Commons Lang). For comparison purposes,we also present the
+coverage values in the last column. As expected [34], the coverage
+values are frequently higher than the mutation score.
 
-We built two crawlers for mining from Gerrit and GitHub
-code review data. Before moving to the technical details, it
-is important to clarify what the goal of this mining process
-is. Once a code contribution (i.e., changes impacting a set of
-existing code files or resulting in new files) is submitted for
-review, it can be a subject to several review rounds. Let us
-assume that Cs is the set of code files submitted for review,
-since subject to code changes.
+The next step is to select the test methods to be analyzed. To be
+selected for this study, test methods must: (1) contain a @Test annotation
+or a name prefixed by test, (2) not rely on anonymous classes,
+(3) not contain neither @Ignore nor @Disabled annotations, and (4)
+have a mutation score computable by PIT, i.e., it covers at least one
+mutant. Next, we collect the mutation score of the test methods
 
-
-
-
-4=  First, from the perspective of the contributor
-(i.e., the developer submitting the code for review), we train
-a transformer model [7] to “translate” the code submitted
-for review into a version implementing code changes that a
-reviewer is likely to suggest. In other words, we learn code
-changes recommended by reviewers during review activities
-and we try to automatically implement them on the code
-submitted for review. This could give a fast and preliminary
-feedback to the contributor as soon as she submits the code.
-This model has been trained on 17,194 code pairs of Cs ! Cr
-where Cs is the code submitted for review and Cr is the code
-implementing a specific comment provided by the reviewer.
-
-
- Construct validity. While we applied many heuristics to
-clean the data used in the training and testing of the NMT
-model, by manual inspecting our dataset we still noticed
-a small percentage of “noisy” comments (i.e., reviewers’
-comments unlikely to trigger code changes).
-
-Internal validity. Subjectiveness in the manual analyses
-could have potentially affected our results. To mitigate such a
-bias, when classifying comments as relevant or irrelevant, two
-authors independently classified each comment, and a third
-author was involved in a case of a conflict.
-
-External validity. We mined our datasets from both Gerrit
-and GitHub, considering a large set of projects (8,904).
-However, we only focused on Java systems, thus limiting
-the generalizability of our findings. 
-
-
-
-5= The achieved results were promising, with the models able
-to generate meaningful recommendations in up to 16% (first
-scenario) and 31% (second scenario) of cases. Still, vast
-improvements are needed to make such models suitable to
-be used by developers.
-
+5= We show
+empirical evidence that there are no major differences between
+high-quality and low-quality test methods in terms of size, number
+of asserts, and modifications. Low-quality test methods are overconcentrated
+on critical test smells, while high-quality test methods
+are likely to contain less important ones.
+As future work, we plan to extend our dataset and to include
+more static and runtime metrics in the analysis to better assess test
+quality, e.g., metrics related to the adopted assertions and the input
+data. Lastly, we plan to provide more qualitative analysis on the
+differences between high and low-quality test methods.
