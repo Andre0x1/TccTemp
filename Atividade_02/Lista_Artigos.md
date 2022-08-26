@@ -20,7 +20,7 @@
 Artigos selecionados:
 
 - 1: Towards Automating Code Review Activities : https://doi.org/10.1109/ICSE43902.2021.00027
-- 2: Characterizing High-Quality Test Methods: A First Empirical Study : https://doi.org/10.1145/3524842.3529092
+- 2: Characterizing High-Quality Test Methods: A First Empirical Study : https://doi.org/10.48550/arXiv.2203.12085
 - 3: Importance-Driven Deep Learning System Testing : https://doi.org/10.1145/3377811.3380391
 - 5: Deep learning based software defect prediction : https://doi.org/10.1016/j.neucom.2019.11.067
 - 8: Performance evaluation of Botnet DDoS attack detection using machine learning : https://doi.org/10.1007/s12065-019-00310-w
